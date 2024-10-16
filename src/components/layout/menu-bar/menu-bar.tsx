@@ -7,7 +7,7 @@ const MenuBar = () => {
   const [activePage, setActivePage] = useState<string>("");
 
   return (
-    <div className="fixed md:relative bottom-0 w-full md:w-fit md:h-screen mb-2 md:mb-0 z-50 bg-[#FFFFFF] border-t border-t-gray-200 md:border-none md:bg-gray-100">
+    <div className="fixed md:relative bottom-0 w-full md:w-fit md:h-screen pb-2 md:pb-0 z-50 bg-[#FFFFFF] border-t border-t-gray-200 md:border-none md:bg-gray-100">
       <div className="flex md:flex-col items-center justify-center flex-wrap mt-3">
         <div className="flex md:flex-col">
           <div className="w-full flex md:flex-col md:gap-0 items-center justify-center gap-7">
