@@ -1,6 +1,6 @@
-import { TChartBarData } from "../../components/charts/chart.type";
+import { TChartData } from "../../components/charts/chart.type";
 
-export const ChartBarData: TChartBarData[] = [
+export const ChartBarData: TChartData[] = [
   {
     key: "Jan",
     value: 70000,
@@ -26,3 +26,5 @@ export const ChartBarData: TChartBarData[] = [
     value: 92000,
   },
 ];
+
+export const ChartPieData: { value: number } = { value: 72 };

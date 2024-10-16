@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 export type TChartBarDataProps = {
-  data: TChartBarData[];
+  data: TChartData[];
   xAxisLabel: string;
   yAxisLabel: string;
 };
@@ -12,7 +12,13 @@ export type ChartCardProps = {
   children: ReactNode;
 };
 
-export type TChartBarData = {
+export type TChartData = {
   key: string;
   value: number;
+};
+
+export type TChartPieDataProps = {
+  data: {
+    value: number;
+  };
 };
