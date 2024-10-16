@@ -1,5 +1,5 @@
 const Timeline = () => {
-  return <div>Timeline</div>;
+  return <div className="m-4">Timeline Page</div>;
 };
 
 export default Timeline;
