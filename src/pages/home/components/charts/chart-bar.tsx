@@ -26,7 +26,7 @@ const ChartBar = () => {
           >
             <CartesianGrid strokeDasharray="" vertical={false} />
             <XAxis
-              dataKey="name"
+              dataKey="month"
               domain={["Jan", "Jun"]}
               ticks={["Jan", "Feb", "Mar", "Apr", "May", "Jun"]}
               interval={0}
@@ -56,7 +56,7 @@ const ChartBar = () => {
             </YAxis>
             <Tooltip />
             <Bar
-              dataKey="uv"
+              dataKey="value"
               fill="#00B7C3"
               activeBar={<Rectangle fill="#005B70" stroke="#A6E9ED" />}
             />
