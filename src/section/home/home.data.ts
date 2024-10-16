@@ -1,28 +1,28 @@
-import { TChartBarData } from "./home.type";
+import { TChartBarData } from "../../components/charts/chart.type";
 
 export const ChartBarData: TChartBarData[] = [
   {
-    month: "Jan",
+    key: "Jan",
     value: 70000,
   },
   {
-    month: "Feb",
+    key: "Feb",
     value: 80000,
   },
   {
-    month: "Mar",
+    key: "Mar",
     value: 63000,
   },
   {
-    month: "Apr",
+    key: "Apr",
     value: 72000,
   },
   {
-    month: "May",
+    key: "May",
     value: 63000,
   },
   {
-    month: "Jun",
+    key: "Jun",
     value: 92000,
   },
 ];

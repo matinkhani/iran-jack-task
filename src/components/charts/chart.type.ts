@@ -1,5 +1,11 @@
 import { ReactNode } from "react";
 
+export type TChartBarDataProps = {
+  data: TChartBarData[];
+  xAxisLabel: string;
+  yAxisLabel: string;
+};
+
 export type ChartCardProps = {
   title: string;
   description: string;
@@ -7,6 +13,6 @@ export type ChartCardProps = {
 };
 
 export type TChartBarData = {
-  month: string;
+  key: string;
   value: number;
 };

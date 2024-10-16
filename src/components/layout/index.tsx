@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Header from "./header/header";
-import MenuBar from "./menu-bar/menu-bar";
+import Header from "./header";
+import MenuBar from "./menu-bar";
+import Filter from "./filter";
+import DropDown from "./dropdown";
 
 const Layout = () => {
   return (
@@ -10,8 +12,12 @@ const Layout = () => {
         <div className="w-full">
           <Header />
         </div>
-        <div className="px-4 md:px-0">
-          <Outlet />
+        <div className="flex flex-col px-4 md:px-0">
+          <Filter />
+          <div className="flex">
+            <DropDown />
+            <Outlet />
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { HeaderTabData } from "./header.data";
 
-const Tabs = () => {
+const HeaderTabs = () => {
   const location = useLocation();
   const pathName = location.pathname;
 
@@ -34,4 +34,4 @@ const Tabs = () => {
   );
 };
 
-export default Tabs;
+export default HeaderTabs;

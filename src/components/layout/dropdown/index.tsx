@@ -1,9 +1,9 @@
-const HomeDropDown = () => {
+const DropDown = () => {
   return (
     <div className="w-[183px] h-screen border-r border-r-gray-200 hidden md:block">
-      HomeDropDown
+      DropDown
     </div>
   );
 };
 
-export default HomeDropDown;
+export default DropDown;

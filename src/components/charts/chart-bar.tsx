@@ -1,5 +1,5 @@
-import { ChartBarData } from "../../home.data";
-import ChartCard from "../chart-card";
+import { FC } from "react";
+import ChartCard from "./chart-card";
 import {
   BarChart,
   Bar,
@@ -11,31 +11,30 @@ import {
   ResponsiveContainer,
   Label,
 } from "recharts";
+import { TChartBarDataProps } from "./chart.type";
 
-const ChartBar = () => {
+const ChartBar: FC<TChartBarDataProps> = ({ data, xAxisLabel, yAxisLabel }) => {
+  const maxValue = Math.max(...data.map((item) => item.value));
+
+  const ticks = Array.from(
+    { length: Math.ceil(maxValue / 20000) + 1 },
+    (_, i) => i * 20000
+  );
+
   return (
     <ChartCard title="Chart 1" description="Description for chart 1">
-      <div className="w-[326px] md:w-60 h-48">
+      <div className="w-fit min-w-[326px] md:w-60 h-48">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
-            data={ChartBarData}
+            data={data}
             margin={{
               top: 10,
               bottom: 20,
             }}
           >
             <CartesianGrid strokeDasharray="" vertical={false} />
-            <XAxis
-              dataKey="month"
-              domain={["Jan", "Jun"]}
-              ticks={["Jan", "Feb", "Mar", "Apr", "May", "Jun"]}
-              interval={0}
-            >
-              <Label
-                value="X-axis title"
-                offset={-20}
-                position="insideBottom"
-              />
+            <XAxis dataKey="key" interval={0}>
+              <Label value={xAxisLabel} offset={-20} position="insideBottom" />
             </XAxis>
             <YAxis
               axisLine={false}
@@ -43,12 +42,12 @@ const ChartBar = () => {
               tickFormatter={(value) =>
                 value === 0 ? value : `${value / 1000}K`
               }
-              domain={[0, 100000]}
-              ticks={[0, 20000, 40000, 60000, 80000, 100000]}
+              domain={[0, maxValue]}
+              ticks={ticks}
               interval={0}
             >
               <Label
-                value="Y-axis title"
+                value={yAxisLabel}
                 angle={-90}
                 position="insideLeft"
                 style={{ textAnchor: "middle" }}

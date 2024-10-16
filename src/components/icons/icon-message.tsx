@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { TIconProps } from "../../types/icon.type";
+import { TIconProps } from "./icon.type";
 
 const IconMessage: FC<TIconProps> = ({ className }) => {
   return (

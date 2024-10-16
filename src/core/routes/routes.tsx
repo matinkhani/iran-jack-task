@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "../../components/layout/layout";
-import Home from "../../pages/home/home";
-import Timeline from "../../pages/timeline/timeline";
-import Chat from "../../pages/chat/chat";
+import Layout from "../../components/layout";
 import NotFound from "../../pages/not-found";
+import TimelinePage from "../../pages/timeline";
+import ChatPage from "../../pages/chat";
+import HomePage from "../../pages/home";
 
 export const router = createBrowserRouter([
   {
@@ -12,15 +12,15 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <HomePage />,
       },
       {
         path: "/timeline",
-        element: <Timeline />,
+        element: <TimelinePage />,
       },
       {
         path: "/chat",
-        element: <Chat />,
+        element: <ChatPage />,
       },
     ],
   },
