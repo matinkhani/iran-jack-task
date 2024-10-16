@@ -1,5 +1,5 @@
 import { ChartBarData } from "../../home.data";
-import ChartCard from "./chart-card";
+import ChartCard from "../chart-card";
 import {
   BarChart,
   Bar,

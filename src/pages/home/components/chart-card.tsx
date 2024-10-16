@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { ChartCardProps } from "../../home.type";
-import IconMore from "../../../../components/icons/icon-more";
+import { ChartCardProps } from "../home.type";
+import IconMore from "../../../components/icons/icon-more";
 
 const ChartCard: FC<ChartCardProps> = ({ title, description, children }) => {
   return (
