@@ -9,7 +9,6 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import ChartCard from "./chart-card";
 import { FC } from "react";
 import { TChartAreaDataProps } from "./chart.type";
 
