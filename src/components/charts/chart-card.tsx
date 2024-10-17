@@ -4,7 +4,7 @@ import { ChartCardProps } from "./chart.type";
 
 const ChartCard: FC<ChartCardProps> = ({ title, description, children }) => {
   return (
-    <div className="p-4 rounded-lg bg-[#FFFFFF] shadow-lg flex flex-col md:m-3 mb-3 md:mb-0 relative">
+    <div className="p-4 rounded-lg bg-[#FFFFFF] shadow-lg flex flex-col md:m-3 mb-3 md:mb-0 relative flex-grow">
       <div className="flex justify-between items-center">
         <div className="flex flex-col gap-">
           <p className="text-[#242424] text-sm font-bold">{title}</p>
@@ -12,12 +12,12 @@ const ChartCard: FC<ChartCardProps> = ({ title, description, children }) => {
             {description}
           </p>
         </div>
-        <IconMore />
+        <IconMore className="cursor-pointer" />
       </div>
-      <div className="w-full mt-7 md:mt-5 flex flex-col items-center justify-center p-4">
+      <div className="w-full mt-7 md:mt-5 mb-5 flex flex-col items-center justify-center p-4">
         {children}
       </div>
-      <p className="text-[#5B5FC7] text-sm font-semibold absolute right-4 md:left-4 bottom-4">
+      <p className="text-[#5B5FC7] text-sm font-semibold absolute right-4 md:left-4 bottom-4 cursor-pointer">
         View details
       </p>
     </div>
