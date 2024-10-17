@@ -17,7 +17,7 @@ const ChartCard: FC<ChartCardProps> = ({ title, description, children }) => {
       <div className="w-full mt-7 md:mt-5 mb-5 flex flex-col items-center justify-center p-4">
         {children}
       </div>
-      <p className="text-[#5B5FC7] text-sm font-semibold absolute right-4 md:left-4 bottom-4 cursor-pointer">
+      <p className="text-[#5B5FC7] text-sm font-semibold absolute right-4 md:left-4 bottom-4 cursor-pointer w-fit">
         View details
       </p>
     </div>
