@@ -5,10 +5,12 @@ import {
   ChartAreaDataByTimeRange,
   ChartBarData,
   ChartPieDataByTimeRange,
+  ChartRadialAreaData,
 } from "../home.data";
 import TimeRangeCharts from "../../../components/charts/time-range-charts";
 import ChartPiePercent from "../../../components/charts/chart-pie-percent";
 import { TChartsWitTimeRange } from "../home.type";
+import ChartRadialBar from "../../../components/charts/chart-radial-bar";
 
 // TODO: make imports with @ alias
 
@@ -54,6 +56,8 @@ const HomeView = () => {
           data={ChartAreaDataByTimeRange[selectedRanges.areaChart].data}
         />
       </TimeRangeCharts>
+
+      <ChartRadialBar data={ChartRadialAreaData} />
     </div>
   );
 };

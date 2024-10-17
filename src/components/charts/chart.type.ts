@@ -37,3 +37,10 @@ export type TChartAreaDataProps = {
     pv: number;
   }[];
 };
+
+export type TChartRadialBarData = {
+  data: {
+    uv: number;
+    fill: string;
+  }[];
+};

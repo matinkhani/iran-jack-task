@@ -147,3 +147,30 @@ export const ChartAreaDataByTimeRange: Record<number, TChartAreaDataProps> = {
   30: { data: ChartAreaData30 },
   60: { data: ChartAreaData60 },
 };
+
+export const ChartRadialAreaData = [
+  {
+    uv: 18,
+    fill: "#555555",
+  },
+  {
+    uv: 26,
+    fill: "#2563EB",
+  },
+  {
+    uv: 31,
+    fill: "#3B82F6",
+  },
+  {
+    uv: 35.22,
+    fill: "#AAAAAA",
+  },
+  {
+    uv: 45.63,
+    fill: "#60A5FA",
+  },
+  {
+    uv: 51.63,
+    fill: "#1E3A8A",
+  },
+];
