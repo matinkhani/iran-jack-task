@@ -1,5 +1,12 @@
 import { ReactNode } from "react";
 
+export type TTimeRangeChartsProps = {
+  children: ReactNode;
+  name: string;
+  selectedRange: number;
+  changeRange: (range: number) => void;
+};
+
 export type TChartBarDataProps = {
   data: TChartData[];
   xAxisLabel: string;
@@ -21,4 +28,12 @@ export type TChartPieDataProps = {
   data: {
     value: number;
   };
+};
+
+export type TChartAreaDataProps = {
+  data: {
+    name: string;
+    uv: number;
+    pv: number;
+  }[];
 };

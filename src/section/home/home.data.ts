@@ -1,4 +1,20 @@
-import { TChartData } from "../../components/charts/chart.type";
+import {
+  TChartAreaDataProps,
+  TChartData,
+  TChartPieDataProps,
+} from "../../components/charts/chart.type";
+
+export const TimeRanges = [
+  { label: "7 Days", value: 7 },
+  { label: "30 Days", value: 30 },
+  { label: "60 Days", value: 60 },
+];
+
+export const ChartPieDataByTimeRange: Record<number, TChartPieDataProps> = {
+  7: { data: { value: 40 } },
+  30: { data: { value: 55 } },
+  60: { data: { value: 70 } },
+};
 
 export const ChartBarData: TChartData[] = [
   {
@@ -27,4 +43,107 @@ export const ChartBarData: TChartData[] = [
   },
 ];
 
-export const ChartPieData: { value: number } = { value: 72 };
+export const ChartAreaData7 = [
+  {
+    name: "Jan",
+    uv: 60000,
+    pv: 50000,
+  },
+  {
+    name: "Feb",
+    uv: 99000,
+    pv: 58000,
+  },
+  {
+    name: "Mar",
+    uv: 80000,
+    pv: 40000,
+  },
+  {
+    name: "Apr",
+    uv: 20000,
+    pv: 48000,
+  },
+  {
+    name: "May",
+    uv: 80000,
+    pv: 53000,
+  },
+  {
+    name: "Jun",
+    uv: 3000,
+    pv: 70000,
+  },
+];
+
+export const ChartAreaData30 = [
+  {
+    name: "Jan",
+    uv: 90000,
+    pv: 5000,
+  },
+  {
+    name: "Feb",
+    uv: 20000,
+    pv: 23000,
+  },
+  {
+    name: "Mar",
+    uv: 80000,
+    pv: 40000,
+  },
+  {
+    name: "Apr",
+    uv: 60000,
+    pv: 12000,
+  },
+  {
+    name: "May",
+    uv: 80000,
+    pv: 62000,
+  },
+  {
+    name: "Jun",
+    uv: 9000,
+    pv: 40000,
+  },
+];
+
+export const ChartAreaData60 = [
+  {
+    name: "Jan",
+    uv: 70000,
+    pv: 30000,
+  },
+  {
+    name: "Feb",
+    uv: 2000,
+    pv: 50000,
+  },
+  {
+    name: "Mar",
+    uv: 30000,
+    pv: 90000,
+  },
+  {
+    name: "Apr",
+    uv: 10000,
+    pv: 78000,
+  },
+  {
+    name: "May",
+    uv: 20000,
+    pv: 43000,
+  },
+  {
+    name: "Jun",
+    uv: 1000,
+    pv: 50000,
+  },
+];
+
+export const ChartAreaDataByTimeRange: Record<number, TChartAreaDataProps> = {
+  7: { data: ChartAreaData7 },
+  30: { data: ChartAreaData30 },
+  60: { data: ChartAreaData60 },
+};
