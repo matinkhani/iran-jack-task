@@ -13,7 +13,7 @@ const TimeRangeCharts: FC<TTimeRangeChartsProps> = ({
 }) => {
   return (
     <ChartCard title={title} description={description} key={name}>
-      <div className="flex w-full justify-center gap-2 mb-10 -m-4">
+      <div className="flex w-full justify-center md:justify-start gap-2 mb-10 -m-4">
         {TimeRanges.map((range) => (
           <div
             key={range.value}

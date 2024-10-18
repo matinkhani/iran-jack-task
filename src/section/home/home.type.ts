@@ -1,1 +1,5 @@
-export type TChartsWitTimeRange = "pieChart" | "areaChart" | "pieChartFull";
+export type TChartsWitTimeRange =
+  | "pieChart"
+  | "areaChart"
+  | "pieChartFull"
+  | "multipleBarChart";

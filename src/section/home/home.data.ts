@@ -1,6 +1,7 @@
 import {
   TChartAreaDataProps,
   TChartData,
+  TChartMultipleBarDataProps,
   TChartPieDataProps,
   TChartPieFullDataProps,
 } from "../../components/charts/chart.type";
@@ -205,3 +206,127 @@ export const ChartPieFullDataByTimeRange: Record<
   30: { data: ChartPieFullData30 },
   60: { data: ChartPieFullData60 },
 };
+
+export const ChartBarMultipleData7 = [
+  {
+    name: "XS",
+    uv: 40,
+    pv: 24,
+    amt: 24,
+  },
+  {
+    name: "S",
+    uv: 30,
+    pv: 13,
+    amt: 22,
+  },
+  {
+    name: "M",
+    uv: 20,
+    pv: 98,
+    amt: 22,
+  },
+  {
+    name: "L",
+    uv: 27,
+    pv: 39,
+    amt: 20,
+  },
+  {
+    name: "XL",
+    uv: 18,
+    pv: 48,
+    amt: 21,
+  },
+  {
+    name: "XXL",
+    uv: 23,
+    pv: 38,
+    amt: 25,
+  },
+];
+
+export const ChartBarMultipleData30 = [
+  {
+    name: "XS",
+    uv: 10,
+    pv: 80,
+    amt: 5,
+  },
+  {
+    name: "S",
+    uv: 70,
+    pv: 2,
+    amt: 90,
+  },
+  {
+    name: "M",
+    uv: 30,
+    pv: 40,
+    amt: 34,
+  },
+  {
+    name: "L",
+    uv: 40,
+    pv: 10,
+    amt: 80,
+  },
+  {
+    name: "XL",
+    uv: 74,
+    pv: 26,
+    amt: 95,
+  },
+  {
+    name: "XXL",
+    uv: 10,
+    pv: 20,
+    amt: 30,
+  },
+];
+
+export const ChartBarMultipleData60 = [
+  {
+    name: "XS",
+    uv: 10,
+    pv: 50,
+    amt: 100,
+  },
+  {
+    name: "S",
+    uv: 100,
+    pv: 50,
+    amt: 10,
+  },
+  {
+    name: "M",
+    uv: 10,
+    pv: 50,
+    amt: 100,
+  },
+  {
+    name: "L",
+    uv: 100,
+    pv: 50,
+    amt: 10,
+  },
+  {
+    name: "XL",
+    uv: 10,
+    pv: 50,
+    amt: 100,
+  },
+  {
+    name: "XXL",
+    uv: 100,
+    pv: 50,
+    amt: 10,
+  },
+];
+
+export const ChartMultipleBarData: Record<number, TChartMultipleBarDataProps> =
+  {
+    7: { data: ChartBarMultipleData7 },
+    30: { data: ChartBarMultipleData30 },
+    60: { data: ChartBarMultipleData60 },
+  };

@@ -50,3 +50,12 @@ export type TChartRadialBarData = {
 export type TChartPieFullDataProps = {
   data: TChartData[];
 };
+
+export type TChartMultipleBarDataProps = {
+  data: {
+    name: string;
+    uv: number;
+    pv: number;
+    amt: number;
+  }[];
+};
