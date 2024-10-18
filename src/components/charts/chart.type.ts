@@ -5,6 +5,8 @@ export type TTimeRangeChartsProps = {
   name: string;
   selectedRange: number;
   changeRange: (range: number) => void;
+  title: string;
+  description: string;
 };
 
 export type TChartBarDataProps = {
@@ -43,4 +45,8 @@ export type TChartRadialBarData = {
     uv: number;
     fill: string;
   }[];
+};
+
+export type TChartPieFullDataProps = {
+  data: TChartData[];
 };

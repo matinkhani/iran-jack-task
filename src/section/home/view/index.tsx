@@ -5,12 +5,14 @@ import {
   ChartAreaDataByTimeRange,
   ChartBarData,
   ChartPieDataByTimeRange,
+  ChartPieFullDataByTimeRange,
   ChartRadialAreaData,
 } from "../home.data";
 import TimeRangeCharts from "../../../components/charts/time-range-charts";
 import ChartPiePercent from "../../../components/charts/chart-pie-percent";
 import { TChartsWitTimeRange } from "../home.type";
 import ChartRadialBar from "../../../components/charts/chart-radial-bar";
+import ChartPieFull from "../../../components/charts/chart-pie-full";
 
 // TODO: make imports with @ alias
 
@@ -20,6 +22,7 @@ const HomeView = () => {
   >({
     pieChart: 7,
     areaChart: 7,
+    pieChartFull: 7,
   });
 
   const handleRangeChange = (chartName: string, range: number) => {
@@ -35,6 +38,8 @@ const HomeView = () => {
         selectedRange={selectedRanges.pieChart}
         changeRange={(range) => handleRangeChange("pieChart", range)}
         name="pie-chart"
+        title="Chart 1"
+        description="Description for chart 1"
       >
         <ChartPiePercent
           data={ChartPieDataByTimeRange[selectedRanges.pieChart].data}
@@ -51,6 +56,8 @@ const HomeView = () => {
         selectedRange={selectedRanges.areaChart}
         changeRange={(range) => handleRangeChange("areaChart", range)}
         name="area-chart"
+        title="Chart 3"
+        description="Description for chart 3"
       >
         <ChartArea
           data={ChartAreaDataByTimeRange[selectedRanges.areaChart].data}
@@ -58,6 +65,17 @@ const HomeView = () => {
       </TimeRangeCharts>
 
       <ChartRadialBar data={ChartRadialAreaData} />
+      <TimeRangeCharts
+        selectedRange={selectedRanges.pieChartFull}
+        changeRange={(range) => handleRangeChange("pieChartFull", range)}
+        name="pieChartFull"
+        title="Chart 5"
+        description="Description for chart 5"
+      >
+        <ChartPieFull
+          data={ChartPieFullDataByTimeRange[selectedRanges.pieChartFull].data}
+        />
+      </TimeRangeCharts>
     </div>
   );
 };

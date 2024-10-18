@@ -22,7 +22,7 @@ const ChartBar: FC<TChartBarDataProps> = ({ data, xAxisLabel, yAxisLabel }) => {
   );
 
   return (
-    <ChartCard title="Chart 1" description="Description for chart 1">
+    <ChartCard title="Chart 2" description="Description for chart 2">
       <div className="w-fit min-w-[326px] md:w-60 h-48">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart

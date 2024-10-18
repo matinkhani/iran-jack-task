@@ -8,17 +8,19 @@ const TimeRangeCharts: FC<TTimeRangeChartsProps> = ({
   name,
   changeRange,
   selectedRange,
+  title,
+  description,
 }) => {
   return (
-    <ChartCard title="Chart 2" description="Description for chart 2" key={name}>
+    <ChartCard title={title} description={description} key={name}>
       <div className="flex w-full justify-center gap-2 mb-10 -m-4">
         {TimeRanges.map((range) => (
           <div
             key={range.value}
-            className={`p-2 border-b-2 border-b-transparent cursor-pointer ${
+            className={`p-2 border-b-2 cursor-pointer ${
               selectedRange === range.value
                 ? "border-b-[#00B7C3] md:border-b-[#5B5FC7]"
-                : ""
+                : "border-b-transparent"
             }`}
             onClick={() => changeRange(range.value)}
           >

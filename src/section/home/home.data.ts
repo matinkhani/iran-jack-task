@@ -2,6 +2,7 @@ import {
   TChartAreaDataProps,
   TChartData,
   TChartPieDataProps,
+  TChartPieFullDataProps,
 } from "../../components/charts/chart.type";
 
 export const TimeRanges = [
@@ -174,3 +175,33 @@ export const ChartRadialAreaData = [
     fill: "#1E3A8A",
   },
 ];
+
+export const ChartPieFullData7 = [
+  { key: "Group A", value: 400 },
+  { key: "Group B", value: 500 },
+  { key: "Group C", value: 200 },
+  { key: "Group D", value: 300 },
+];
+
+export const ChartPieFullData30 = [
+  { key: "Group A", value: 250 },
+  { key: "Group B", value: 100 },
+  { key: "Group C", value: 700 },
+  { key: "Group D", value: 200 },
+];
+
+export const ChartPieFullData60 = [
+  { key: "Group A", value: 200 },
+  { key: "Group B", value: 300 },
+  { key: "Group C", value: 800 },
+  { key: "Group D", value: 50 },
+];
+
+export const ChartPieFullDataByTimeRange: Record<
+  number,
+  TChartPieFullDataProps
+> = {
+  7: { data: ChartPieFullData7 },
+  30: { data: ChartPieFullData30 },
+  60: { data: ChartPieFullData60 },
+};
