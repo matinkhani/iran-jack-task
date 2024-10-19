@@ -36,7 +36,7 @@ const ChartArea: FC<TChartAreaDataProps> = ({ data }) => {
   const ticks = [0, 20000, 40000, 60000, 80000, 100000];
 
   return (
-    <div className="w-fit min-w-[326px] md:w-[455px] h-60">
+    <div className="w-full  md:w-[455px] h-60">
       <ResponsiveContainer>
         <AreaChart
           data={data}

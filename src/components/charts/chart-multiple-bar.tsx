@@ -14,7 +14,7 @@ import {
 
 const ChartMultipleBar: FC<TChartMultipleBarDataProps> = ({ data }) => {
   return (
-    <div className="w-fit min-w-[326px] md:w-[471px] h-72">
+    <div className="w-full md:w-[471px] h-72">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           data={data}

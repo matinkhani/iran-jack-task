@@ -28,7 +28,7 @@ const ChartPiePercent: FC<TChartPieDataProps> = ({ data }) => {
   ];
 
   return (
-    <div className="w-[326px] md:w-60 h-48 flex flex-col items-center relative">
+    <div className="w-full md:w-60 h-48 flex flex-col items-center relative">
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
