@@ -22,7 +22,11 @@ const MenuBarItems: FC<MenuBarItemsprops> = ({
       }`}
       onClick={() => setActivePage(name)}
     >
-      <span className={`${activePage === name && "stroke-[#5B5FC7]"}`}>
+      <span
+        className={`${
+          activePage === name ? "text-[#5B5FC7]" : "text-[#616161]"
+        }`}
+      >
         {icon}
       </span>
       <p
